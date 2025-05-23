@@ -1,10 +1,10 @@
 package spring.beans.anotaciones;
 
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component("saludo")
-@Scope(scopeName = "prototype")
+//@Component("saludo")
+//@Scope(scopeName = "prototype")
+@Service("saludoservice")
 public class ServicioSaludo {
 	
 	

@@ -13,14 +13,14 @@ public class AppConfig {
 //        return new ServicioSaludo();
 //    }
 	
-//	@Bean(name = "PersonBean2")
-//    public Person persona2() {
-//        return new Person("Eva",51);
-//    }
+	@Bean(name = "PersonBean2")
+    public Person persona2() {
+        return new Person("Eva",51);
+    }
 
-//    @Bean(name = "PersonBean1")
-//    public Person persona1() {
-//        return new Person("Marta",46);
-//    }
+    @Bean(name = "PersonBean1")
+    public Person persona1() {
+        return new Person("Marta",46);
+    }
 	
 }

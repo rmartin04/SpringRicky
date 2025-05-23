@@ -12,7 +12,7 @@ public class Customer implements Serializable
 {
 	private static final long serialVersionUID = -6618287457929417920L;
 	
-	//@Qualifier("PersonBean2")//Para el caso que haya mas de uno y quieras especificar cual quieres
+	@Qualifier("PersonBean1")//Para el caso que haya mas de uno y quieras especificar cual quieres
 	//@Autowired (required=false)//Se pone required a false cuando suponemos que puede no haber ninguno y as� no da error
 	@Autowired
 	private Person person;

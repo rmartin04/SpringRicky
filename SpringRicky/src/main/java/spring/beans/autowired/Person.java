@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
 
 //@Component
 public class Person implements Serializable{
-	@Value("Juan")
+	//@Value("Juan")
 	private String nombre;
 
-	@Value("30")
+	//@Value("30")
 	private int edad;
 	
 	public Person() {
