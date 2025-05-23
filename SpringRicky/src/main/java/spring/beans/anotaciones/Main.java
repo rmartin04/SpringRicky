@@ -6,7 +6,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        ServicioSaludo saludo = context.getBean(ServicioSaludo.class);
+        ServicioSaludo saludo = (ServicioSaludo)context.getBean("saludo");
+        // ServicioSaludo saludo = context.getBean(ServicioSaludo.class);
         saludo.saludar();
     }
 }
