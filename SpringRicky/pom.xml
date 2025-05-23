@@ -5,20 +5,21 @@
 	<groupId>es.curso.spring</groupId>
 	<artifactId>SpringRicky</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
-	
+
 	<dependencies>	<!--
 		https://mvnrepository.com/artifact/org.springframework/spring-context -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>6.2.7</version>
-			</dependency>
-		</dependencies>
+		</dependency>
+	</dependencies>
 
 
 </project>

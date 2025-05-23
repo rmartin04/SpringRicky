@@ -9,8 +9,8 @@ public class InversionControl_1 {
 		System.out.println("Arranco");
 		ApplicationContext context=new ClassPathXmlApplicationContext("Beans.xml");
 		
-		System.out.println("Accedo al objeto3");
-		HelloWorld obj=(HelloWorld)context.getBean("helloWorld3");
+		System.out.println("Accedo al objeto");
+		HelloWorld obj=(HelloWorld)context.getBean("helloWorld"); 
 		obj.getMessage();
 
 	}
