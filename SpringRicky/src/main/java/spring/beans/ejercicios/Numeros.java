@@ -1,8 +1,13 @@
 package spring.beans.ejercicios;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Numeros {
-	
+	//@Value("250")
 	private int numero1;
+	//@Value("25")
 	private int numero2;
 
 	public Numeros() {
@@ -31,5 +36,17 @@ public class Numeros {
 	public void setNumero2(int numero2) {
 		this.numero2 = numero2;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Numeros [numero1=");
+		builder.append(numero1);
+		builder.append(", numero2=");
+		builder.append(numero2);
+		builder.append("]");
+		return builder.toString();
+	}
+	
 
 }

@@ -3,7 +3,7 @@ package spring.beans.ejercicios;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service("calculadoraService")
+@Service
 public class CalculadoraService {
 	@Autowired
 	private Numeros numeros;
@@ -25,15 +25,18 @@ public class CalculadoraService {
 		this.numeros = numeros;
 	}
 
-	public int operar(String operacion) {
+	public void operar(String operacion) {
 		int resultado = 0;
 		switch (operacion) {
 		case "suma":
 			resultado = numeros.getNumero1() + numeros.getNumero2();
+			break;
 		case "resta":
 			resultado = numeros.getNumero1() - numeros.getNumero2();
+			break;
 		case "multiplicacion":
 			resultado = numeros.getNumero1() * numeros.getNumero2();
+			break;
 		case "division":
 			if (numeros.getNumero2() != 0) {
 				resultado = numeros.getNumero1() / numeros.getNumero2();
@@ -41,12 +44,16 @@ public class CalculadoraService {
 				System.out.println("No se puede dividir por cero");
 				
 			}
+			break;
 		default:
 			System.out.println("Operación no válida");
 			break;
+			
 		}
 		
-		return resultado;
+		System.out.println("El resultado de la " + operacion + " entre "+numeros.getNumero1()+" y "
+		+ numeros.getNumero2()+ " es: " + resultado);
+		
 		
 		
 		
